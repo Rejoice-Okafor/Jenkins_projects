@@ -105,4 +105,4 @@ Step 3: Wait for Jenkins to Restart
 
 Allow Jenkins to restart, and you're ready to use the Docker Pipeline plugin for your Jenkins projects.
 
-This rephrased version simplifies the steps for Docker installation and the installation of the Docker Pipeline plugin in Jenkins.
+
