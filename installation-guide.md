@@ -70,13 +70,13 @@ If you encounter any issues or need further assistance, please refer to the Jenk
 
 # Installing Docker
 
-
 Step 1: Install Docker
 
 Begin by installing Docker on your system:
 
 bash
 Copy code
+sudo apt update
 sudo apt install docker.io
 After installing Docker, grant permission to the Jenkins user and the Ubuntu user to access the Docker daemon:
 
@@ -86,8 +86,6 @@ sudo su -
 usermod -aG docker jenkins
 usermod -aG docker ubuntu
 systemctl restart docker
-
-
 Step 2: Install the Docker Pipeline Plugin in Jenkins
 
 Log in to your Jenkins instance.
@@ -106,3 +104,5 @@ http://<ec2-instance-public-ip>:8080/restart
 Step 3: Wait for Jenkins to Restart
 
 Allow Jenkins to restart, and you're ready to use the Docker Pipeline plugin for your Jenkins projects.
+
+This rephrased version simplifies the steps for Docker installation and the installation of the Docker Pipeline plugin in Jenkins.
