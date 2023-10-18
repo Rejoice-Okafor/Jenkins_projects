@@ -4,8 +4,6 @@ Welcome to the Jenkins Projects Repository! This repository is dedicated to stor
 
 ## About This Repository
 
-## About This Repository
-
 Hello there! I'm a Jenkins enthusiast who's just beginning the journey into the world of automation and continuous integration. This repository is where I'll store all my Jenkins projects, from my humble beginnings to the exciting adventures that lie ahead.
 
 Consider this repository your window into my learning process with Jenkins. It's a space where I'm organizing, documenting, and version-controlling my Jenkins projects as I take my first steps in the CI/CD realm. You'll find an assortment of resources, scripts, and configuration files that accompany me on this journey, helping me streamline my Jenkins workflows and explore the magic of continuous integration and continuous delivery.
