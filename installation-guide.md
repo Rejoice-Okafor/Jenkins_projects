@@ -69,16 +69,13 @@ Now that Jenkins is up and running, you can create and configure your CI/CD pipe
 OOB
 Troubleshooting
 If you encounter any issues or need further assistance, please refer to the Jenkins Troubleshooting Guide.
-
-# Installing Docker
-
-
-Step 1: Install Docker
+markdown
+Copy code
+**Step 1: Install Docker**
 
 Begin by installing Docker on your system:
 
-shell
-Copy code
+```shell
 sudo apt update
 sudo apt install docker.io
 After installing Docker, grant permission to the Jenkins user and the Ubuntu user to access the Docker daemon:
@@ -107,4 +104,3 @@ http://<ec2-instance-public-ip>:8080/restart
 Step 3: Wait for Jenkins to Restart
 
 Allow Jenkins to restart, and you're ready to use the Docker Pipeline plugin for your Jenkins projects.
-
