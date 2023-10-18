@@ -69,7 +69,7 @@ sudo apt update
 2. Install Docker:
 
 ```shell
-sudo apt-install docker.io
+sudo apt install docker.io
 ```
 
 3. Grant Jenkins user and Ubuntu user permission to the Docker daemon:
