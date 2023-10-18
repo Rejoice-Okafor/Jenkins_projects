@@ -28,6 +28,7 @@ sudo apt install openjdk-11-jdk
 
 ```shell
 wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
+```
 
 4. Add the Jenkins repository:
 
@@ -97,7 +98,6 @@ Select the plugin and click the "Install" button.
 After installation, restart Jenkins to activate the plugin:
 
 ```shell
-Copy code
 http://<ec2-instance-public-ip>:8080/restart
 ```
 
