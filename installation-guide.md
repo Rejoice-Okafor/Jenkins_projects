@@ -22,6 +22,7 @@ Jenkins requires Java. You can install OpenJDK, an open-source implementation of
 
 bash
 Copy code
+B
 sudo apt install openjdk-8-jdk
 Add Jenkins Repository and Key:
 
@@ -37,7 +38,7 @@ Update your package list and install Jenkins:
 
 bash
 Copy code
-sudo apt update
+sOOBudo apt update
 sudo apt install jenkins
 Start Jenkins:
 
@@ -53,6 +54,7 @@ The initial Jenkins admin password can be found in the Jenkins home directory. U
 
 bash
 Copy code
+OA
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 Access Jenkins Web Interface:
 
@@ -64,11 +66,48 @@ In the Jenkins web interface, you will be prompted to install recommended plugin
 
 Getting Started
 Now that Jenkins is up and running, you can create and configure your CI/CD pipelines, build jobs, and automation. For detailed information on how to use Jenkins, refer to the Jenkins Documentation.
-
+OOB
 Troubleshooting
 If you encounter any issues or need further assistance, please refer to the Jenkins Troubleshooting Guide.
 
 # Installing Docker
 
 
+Step 1: Install Docker
+
+Begin by installing Docker on your system:
+
+baOOBsh
+Copy code
+sudo apt update
+sudo apt install docker.io
+
+After installing Docker, grant permission to the Jenkins user and the Ubuntu user to access the Docker daemon:
+
+bash
+Copy code
+sudo su -
+usermod -aG docker jenkins
+usermod -aG docker ubuntu
+systemctl restart docker
+
+Step 2: Install the Docker Pipeline Plugin in Jenkins
+
+Log in to your Jenkins instance.
+
+Navigate to "Manage Jenkins" > "Manage Plugins."
+
+In the "Available" tab, search for the "Docker Pipeline" plugin.
+
+Select the plugin and click the "Install" button.
+
+After the plugin is installed, restart Jenkins to activate it:
+
+bash
+Copy code
+http://<ec2-instance-public-ip>:8080/restart
+
+Step 3: Wait for Jenkins to Restart
+
+Allow Jenkins to restart, and you're ready to use the Docker Pipeline plugin for your Jenkins projects.
 
