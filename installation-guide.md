@@ -21,33 +21,28 @@ Before you begin, ensure you have the following prerequisites in place:
 2. Install Java Development Kit (JDK):
 
 ```shell
-Copy code
 sudo apt install openjdk-11-jdk
 ```
 
 3. Add the Jenkins repository key:
 
 ```shell
-Copy code
 wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
 
 4. Add the Jenkins repository:
 
 ```shell
-Copy code
 sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
 ```
 5. Install Jenkins:
 
 ```shell
-Copy code
 sudo apt update
 sudo apt install jenkins
 ```
 6. Start Jenkins and enable it to start on boot:
 
 ```shell
-Copy code
 sudo systemctl start jenkins
 sudo systemctl enable jenkins
 ```
@@ -55,7 +50,6 @@ sudo systemctl enable jenkins
 7. Retrieve the initial Jenkins administrator password:
 
 ```shell
-Copy code
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
 8. Access Jenkins in your web browser using your server's IP address or domain and port 8080 (e.g., http://your_server_ip:8080). Enter the initial administrator password when prompted.
@@ -69,20 +63,17 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 1. Update the package repository:
 
 ```shell
-Copy code
 sudo apt update
 ```
 2. Install Docker:
 
 ```shell
-Copy code
 sudo apt-install docker.io
 ```
 
 3. Grant Jenkins user and Ubuntu user permission to the Docker daemon:
 
 ```shell
-Copy code
 sudo su -
 usermod -aG docker jenkins
 usermod -aG docker ubuntu
@@ -92,7 +83,6 @@ systemctl restart docker
 4. Restart Jenkins:
 
 ```shell
-Copy code
 http://<ec2-instance-public-ip>:8080/restart
 ```
 Step 3: Install Docker Pipeline Plugin in Jenkins
